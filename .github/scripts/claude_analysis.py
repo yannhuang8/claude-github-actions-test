@@ -10,6 +10,7 @@ def analyze_code():
 
     # 读取需要分析的代码文件（示例：读取当前目录下的 Python 文件）
     code_files = [f for f in os.listdir('.') if f.endswith('.py')]
+    print("code_files: " + code_files)
     code_content = ""
     for file in code_files:
         with open(file, 'r') as f:
