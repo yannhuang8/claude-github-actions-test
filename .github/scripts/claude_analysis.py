@@ -8,9 +8,14 @@ def analyze_code():
         base_url='https://code.ppchat.vip'
     )
 
+    # 获取当前工作目录（字符串类型）
+    current_dir = os.getcwd()
+    # 打印结果
+    print("当前目录：", current_dir)
+
     # 读取需要分析的代码文件（示例：读取当前目录下的 Python 文件）
     code_files = [f for f in os.listdir('.') if f.endswith('.py')]
-    print(code_files)
+
     code_content = ""
     for file in code_files:
         with open(file, 'r') as f:
