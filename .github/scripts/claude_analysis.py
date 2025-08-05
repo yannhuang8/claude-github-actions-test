@@ -14,7 +14,7 @@ def analyze_code():
     print("当前目录：", current_dir)
 
     # 读取需要分析的代码文件（示例：读取当前目录下的 Python 文件）
-    code_files = [f for f in os.listdir('.') if f.endswith('.py')]
+    code_files = ['/home/runner/work/claude-github-actions-test/claude-github-actions-test/src/main/java/com/example/demo/controller/HelloController.java']
 
     code_content = ""
     for file in code_files:
